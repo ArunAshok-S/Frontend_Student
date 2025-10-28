@@ -11,7 +11,7 @@ function UpdateStudent() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:5000/students/${name}`, student);
+    await axios.put(`https://backend-student-ex5n.onrender.com/students/${name}`, student);
     alert("Student updated!");
     navigate("/list");
   };

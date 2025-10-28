@@ -10,7 +10,7 @@ function AddStudent() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/students", student);
+    await axios.post("https://backend-student-ex5n.onrender.com/students", student);
     alert("Student added successfully!");
     setStudent({ name: "", age: "", course: "" });
   };
