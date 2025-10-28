@@ -7,7 +7,7 @@ function SearchStudent() {
 
   const handleSearch = async (e) => {
     e.preventDefault();
-    const res = await axios.get(`https://backend-student-ex5n.onrender.com/search/${query}`);
+    const res = await axios.get(`https://backend-student-1.onrender.com/search/${query}`);
     setResults(res.data);
   };
 
